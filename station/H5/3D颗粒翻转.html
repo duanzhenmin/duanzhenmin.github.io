@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#box{
+		width:700px;
+		height: 400px;
+		background: #ccc;
+		margin:100px auto;
+		position:relative;
+	}
+	#box span{
+		position:absolute;
+		transform-style: preserve-3d;
+	}
+	#box span i{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		
+	}
+	#box span i:nth-child(1){
+		background: url('img/0.jpg') no-repeat;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+	}
+	#box span i:nth-child(2){
+		background:url('img/1.jpg') no-repeat;
+		transform:scale(-1,1);
+	}
+</style>
+<script>
+	window.onload = function(){
+		var oBox=document.querySelector('#box');
+		var C=4,R=7;
+		var W=oBox.offsetWidth/R;
+		var H=oBox.offsetHeight/C;
+		var iNow=0;
+		var bFloag=false;
+		for (var c = 0; c < C; c++) {
+			for (var r = 0; r < R; r++) {
+				var oSpan=document.createElement('span');
+				oSpan.innerHTML='<i></i><i></i>';
+				oSpan.style.width=W+'px';
+				oSpan.style.height=H+'px';
+				oBox.appendChild(oSpan);
+				oSpan.style.left=r*W+'px';
+				oSpan.style.top=c*H+'px';
+				oSpan.children[0].style.backgroundPosition=-r*W+'px -'+c*H+'px';
+				oSpan.children[1].style.backgroundPosition=-r*W+'px -'+c*H+'px';
+				oSpan.c=c;
+				oSpan.r=r;
+			}
+		}
+		var aSpan=document.querySelectorAll('#box span');
+		oBox.onclick=function(){
+			if(bFloag)return false;
+			bFloag=true;
+			iNow++;
+			for (var i = 0; i < aSpan.length; i++) {
+				aSpan[i].style.transition='1s all ease '+(aSpan[i].c+aSpan[i].r)*200+'ms';
+				aSpan[i].style.transform='perspective(800px) rotateY(-180deg)';
+			}
+			aSpan[aSpan.length-1].addEventListener('transitionend',function(){
+				for (var i = 0; i < aSpan.length; i++) {
+					aSpan[i].style.transition='none';
+					aSpan[i].style.transform='perspective(800px) rotateY(0deg)';	
+					aSpan[i].children[0].style.backgroundImage='url(img/'+iNow%3+'.jpg)';
+					aSpan[i].children[1].style.backgroundImage='url(img/'+(iNow+1)%3+'.jpg)';;					
+				}
+				bFloag=false;
+			},false);
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="box">
+		<!--<span><i></i><i></i></span>-->
+	</div>
+</body>
+</html>

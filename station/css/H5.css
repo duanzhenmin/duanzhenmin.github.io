@@ -1,0 +1,300 @@
+body{background:#22c3aa;}
+@font-face {
+    font-family: 'bauhaus_93regular';
+    src: url('bauhaus93-webfont.eot');
+    src: url('bauhaus93-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.hr2{
+	border: 2px dashed #22c3aa;
+	margin:20px 0;
+}
+.hr3{
+	height:8px;
+	border: 3px solid #22c3aa;
+	border-left:0;
+	border-right:0;
+	margin:20px 0;
+}
+h1{
+	font-size: 45px;
+	line-height: 60px;
+	text-align: center;
+}
+h2{
+	font-size: 40px;
+	line-height: 50px;
+	color:#333;
+	margin-bottom: 10px;
+	font-weight:500;
+	text-shadow:3px 3px 0 #aee2d9;
+}
+.wrap{
+	width: 80%;
+	margin: 70px auto 0;
+	background: #efefef;
+	padding-top:20px;
+	box-shadow:0 0 15px 3px #888;
+}
+/*回到顶部*/
+#toTop{
+	position:fixed;
+	z-index: 100;
+	bottom: 30px;
+	right: 30px;
+	display:none;
+	cursor: pointer;
+}
+/*文字说明样式*/
+.con-wrap .font{
+	font-size: 1.2em;
+	color: #444;
+	line-height: 1.5em;
+	background: #aee2d9;
+	border-left:5px solid #22c3aa;
+	padding:8px 0 8px 20px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+.con-wrap{
+	position:relative;
+	z-index: 3;
+	padding:0 60px;
+}
+
+/*回到顶部*/
+#toTop{
+	position:fixed;
+	z-index: 100;
+	bottom: 30px;
+	right: 30px;
+	display:none;
+}
+
+/*导航*/
+.home-page{
+	position:fixed;
+	left:0;
+	top: 0;
+	width:100%;
+	background: #22c3aa;
+	color:#FFF;
+	z-index: 9999;
+}
+.nav-wrap{
+	width:100%;
+}
+.nav-wrap h1{
+	font-family:'bauhaus_93regular';
+}
+.nav1{
+	width:90%;
+	height: 60px;
+	margin: 0 auto;
+}
+.nav1 h1{
+	line-height: 60px;
+	cursor: pointer;
+	color:#fff;
+}
+/*时钟*/
+.nav1 ul li{
+	width: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-family:'bauhaus_93regular';
+	font-size: 32px;
+	float:left;
+	margin-top: 10px;
+	transform: rotateX(0deg);
+	transition: 0.2s all ease;
+}
+/*左右滑动*/
+.glide .box{text-align: center;}
+.glide input{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	background: #008000;
+	color: #FFF;
+	cursor: pointer;
+}
+.glide .ul1{
+		position: relative;
+		width: 380px;
+		height:240px;
+		margin: 60px auto 0;
+		perspective: 900px;
+	}
+.glide .ul1 li{
+	position:absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	opacity: 0;
+	transition: 1s all ease;
+}
+.glide .ul1 li img{width:100%;}
+.glide .ul1 li.cur{
+	opacity: 1;
+	z-index: 3;
+}
+.glide .ul1 li.l1{
+	transform: translate(-260px) rotateY(60deg);
+	opacity: 0.7;
+	z-index:2;
+}
+.glide .ul1 li.l2{
+	transform: translate(-360px) rotateY(80deg);
+}
+.glide .ul1 li.r1{
+	transform: translate(260px) rotateY(-60deg);
+	opacity: 0.7;
+	z-index: 2;
+}
+.glide .ul1 li.r2{
+	transform: translate(360px) rotateY(-80deg);
+}
+/*3D-图片环*/
+.circular{
+	width:100%;
+	margin-bottom:30px;
+}
+.circular .box{text-align: center;}
+.circular img{width:90%;}
+/*时钟*/
+.clock{padding-bottom:30px;}
+.clock .box{
+	position:relative;
+	width:500px;
+	height: 500px;
+	background: url(../img/8/biaopan.png) no-repeat;
+	margin:40px auto 0;
+}
+.clock .box i{
+	position:absolute;
+	left:50%;
+	top:0;
+}
+.clock .box i:nth-child(1){
+	width: 71px;
+	height: 184px;
+	background: url(../img/8/shizhen.png) no-repeat;
+	margin-left: -35px;
+	margin-top:86px;
+	transform-origin: center 164px;
+}
+.clock .box i:nth-child(2){
+	width: 35px;
+	height: 213px;
+	background: url(../img/8/fenzhen.png) no-repeat;
+	margin-left: -17px;
+	margin-top:50px;
+	transform-origin: center 200px;
+}
+.clock .box i:nth-child(3){
+	width: 38px;
+	height: 269px;
+	background: url(../img/8/miaozhen.png) no-repeat;
+	margin-left: -19px;
+	margin-top:36px;
+	transform-origin: center 214px;
+}
+/*简单的钢琴*/
+.piano{
+	margin-bottom:30px;
+	position:relative;
+}
+.piano .box>img{
+	position: absolute;
+	left:0;
+	top:0;
+	width:50px;
+	display:none;
+	z-index: 999999;
+}
+.piano .box ul{
+	width:80%;
+	height:300px;
+	border:1px solid #000;
+	display:-webkit-box;
+	margin:0 auto;
+	perspective:800px;
+}
+.piano .box li{
+	height:100%;
+	-webkit-box-flex: 1;
+	border:1px solid #ff0;
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+.piano .box li:nth-child(2n){
+	background:-webkit-linear-gradient(#ddd,#fff);
+}
+.piano .box li:nth-child(2n-1){
+	background:-webkit-linear-gradient(#bbb,#000);
+}
+.piano .box li.active{
+	transform:translateY(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

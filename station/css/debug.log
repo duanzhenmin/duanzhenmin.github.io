@@ -1,0 +1,11 @@
+[0622/191915:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0622/191915:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0622/191920:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0623/092309:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0623/092309:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0623/092314:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0704/171616:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0704/171616:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0704/171621:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0704/171626:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0704/171631:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.

@@ -1,0 +1,668 @@
+i{
+		display:inline-block;
+	}
+	/*页面顶部登录条*/
+	.loginbar{
+		height:38px;
+		background:#f5f5f5;
+		border-top:1px solid #eee;
+		border-bottom:1px solid #eee;
+		line-height:38px;
+	}
+	.loginbar-warp{
+		width:1200px;
+		margin:0 auto;
+	}
+	.loginbar span{
+		padding:0 15px;
+		color:#666;
+	}
+	.loginbar a{
+		border-left:1px dashed #cbcbcb; 
+		line-height:18px;
+		display:inline-block;
+		margin-top:10px;
+	}
+	.loginbar .dh{
+		width:10px;
+		height:16px;
+		margin-right:8px;
+		background:url(../img/mls_global140607.png) -171px -45px no-repeat;
+		vertical-align:middle;
+	} 
+	.loginbar .dd{
+		width:13px;
+		height:15px;
+		margin-right:9px;
+		background:url(../img/mls_global140607.png) -223px -45px no-repeat;
+		vertical-align:middle;
+	} 
+	.loginbar .car{
+		width:18px;
+		height:15px;
+		margin-right:4px;
+		background:url(../img/mls_global140607.png) 0 -164px no-repeat;
+		vertical-align:middle;
+	} 
+	.loginbar .qq {
+		width:15px;
+		height:16px;
+		margin-right:3px;
+		background:url(../img/mls_global140607.png) -189px -21px no-repeat;
+		vertical-align:middle;
+	} 
+	.loginbar .wx{
+		width:16px;
+		height:16px;
+		margin-right:3px;
+		background:url(../img/i_wx_single.png) no-repeat;
+		vertical-align:middle;
+	} 
+	.loginbar b{
+		height:15px;
+		display:inline-block;
+		background:url(../img/nub_05.png) repeat-x;
+		line-height:15px;
+		color:#fff;
+		padding:0 4px;
+		position:relative;
+		margin-left:7px;
+	}
+	.loginbar .one{
+		width:4px;
+		height:15px;
+		background:url(../img/nub_03.png);
+		display:inline-block;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.loginbar .two{
+		width:4px;
+		height:15px;
+		background:url(../img/nub_07.png);
+		display:inline-block;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+	.loginbar .first{
+		border:0;
+	}
+	/*end 页面顶部登录条*/
+	/*头部搜索框*/
+	.search{
+		width:1200px;
+		height:66px;
+		margin:0 auto;
+	}
+	.search .ss{
+		width:460px;
+		height:30px;
+		border:2px solid #ff6699;
+		margin:17px 0 0 254px;
+	}
+	.search img{
+		height:36px;
+		margin-top:15px;
+	}
+	.search div{
+		display:inline-block;
+	}
+	.search span{
+		width:90px;
+		height:30px;
+		display:inline-block;
+		background:#ff6699;
+		line-height:30px;
+		color:#fff;
+		text-align:center;
+		cursor:pointer;
+	}
+	.search .one{
+		width:69px;
+		border-right:1px dashed #e6e6e6;
+		color:#666;
+		background:url(../img/xl.png) 54px 13px no-repeat #f5f5f5;
+	}
+	.search input{
+		width:274px;
+		height:30px;
+		padding-left:26px;
+		color:#a9a9a9;
+		border:0;
+		background:url(../img/ss.png) 8px 8px no-repeat;
+	}
+	/*end 头部搜索框*/
+	/*头部导航*/
+	.top-nav{
+		height:40px;
+		background:#ff6599;
+	}
+	.top-nav-warp{
+		width:1074px;
+		margin:0 auto;
+		padding-left:126px;
+		line-height:40px;
+		}
+		.top-nav-warp a{
+			margin:0 15px 0 14px;
+			color:#fff;
+			font-size:14px;
+		}
+		.top-nav-warp img{
+			margin:19px 0 0 6px;
+		}
+		.top-nav-warp li{
+			height:40px;
+		}
+		.top-nav-warp li:hover{
+			background:#ed3577;
+		}
+	/*end 头部导航*/
+	/*上方侧部菜单*/
+	.top-menu{
+		width:1200px;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	.top-menu-f{
+		width:238px;
+		border:1px solid #e6e6e6;
+		border-right:0;
+	} 
+	.top-menu-f .top-menu-li{
+		height:115px;
+		position:relative;
+		margin-left:20px;
+		z-index:999;
+		border-right:1px solid #e6e6e6;
+	}
+	.top-menu-f .fl{
+		width:196px;
+		height:114px;
+		border-bottom:1px dashed #e6e6e6;
+	}
+	.top-menu-f .fl p{
+		height:29px;
+		color:#ff6699;
+		margin-bottom:8px;
+		font-size:15px;
+	}
+	.top-menu-f .fl .list1{
+		width:15px;
+		height:17px;
+		background:url(../img/wel_ico2.png) no-repeat -219px -1px;
+		margin:12px 7px 0 0;
+	}
+	.top-menu-f .fl .list2{
+		width:18px;
+		height:14px;
+		background:url(../img/wel_ico2.png) no-repeat -219px -27px;
+		margin:14px 5px 0 0;
+	}
+	.top-menu-f .fl .list3{
+		width:18px;
+		height:15px;
+		background:url(../img/wel_ico2.png) no-repeat -220px -54px;
+		margin:14px 5px 0 0;
+	}
+	.top-menu-f .fl .list4{
+		width:17px;
+		height:14px;
+		background:url(../img/wel_ico2.png) no-repeat -221px -84px;
+		margin:14px 6px 0 0;
+	}
+	.top-menu-f .fl .list5{
+		width:12px;
+		height:16px;
+		background:url(../img/wel_ico2.png) no-repeat -221px -110px;
+		margin:13px 8px 0 0;
+	}
+	.top-menu-f .fl a,.top-submenu a{
+		float:left;
+		height:24px;
+		line-height:24px;
+		margin-right:15px;
+		color:#666;
+	}
+	.top-menu-f .fr{
+		width:21px;
+		height:115px;
+		line-height:115px;
+	}
+	.top-menu-f .one .ys{
+		color:#ff6699;
+	}
+	.top-submenu{
+		width:310px;
+		padding:0 20px;
+		position:absolute;
+		left:237px;
+		top:-1px;
+		border:1px solid #e6e6e6;
+		border-left:0;
+		display:none;
+		background:#fff;
+	}
+	.top-menu-f .top-submenu .list p{
+		color:#666;
+		margin-top:15px;
+		margin-bottom:3px;
+		height:15px;
+		font-size:15px;
+	}
+	.top-menu-f .top-submenu .list div{
+		overflow:hidden;
+	}
+	.top-menu-f .top-menu-li:hover{
+		padding-left:20px;
+		width:217px;
+		margin-left:0;
+		border-bottom:1px solid #e6e6e6;
+		background:#fff;
+		border-right:0;
+	}
+	.top-menu-f .top-menu-li:hover .top-submenu{
+		display:block;
+	}
+	.top-menu-f .top-menu-li:hover .fr{
+		color:#ff6699;
+		}
+	.top-menu-f .top-menu-li:hover .one{
+		border-bottom:none;
+		}
+	.top-menu-img{
+		margin-bottom:10px; 
+	}
+	.top-menu-img .gd{
+		border-bottom:1px solid #e6e6e6; 
+	}
+	.top-menu-img .list-1{
+		border-bottom:1px solid #e6e6e6;
+	}
+	.top-menu-r .list-2{
+		margin-left:10px;
+		border:1px solid #e6e6e6;
+	}
+	.top-menu-r .list-3{
+		margin-left:11px;
+	}
+	/*end 上方侧部菜单*/
+	/*内容部分1*/
+	.con-1{
+		width:1200px;
+		margin:0 auto 43px;
+	}
+	.con-1 .tit{
+		height:32px;
+		border-bottom:1px solid #e6e6e6;
+		margin-bottom:15px;
+	}
+	.con-1 .rctj{
+		display:block;
+		height:25px;
+		width:157px;
+		background:url(../img/wel_ico2.png) no-repeat 0 0;
+	}
+	.con-1 li{
+		width:180px;
+		margin-right:24px;
+	}
+	.con-1 li img{
+		margin-bottom:6px;
+	}
+	.con-1 .inf{
+		height:68px;
+		border-bottom:1px dashed #e6e6e6;
+		margin-bottom:10px;
+	}
+	.con-1 .inf p{
+		height:36px;
+		line-height:18px;
+		font-size:12px;
+		color:#666;
+	}
+	.con-1 .inf .one{
+		height:28px;
+		line-height:28px;
+		color:#ff6699;
+		font-size:12px;
+	}
+	.con-1 .inf .one span{
+		color:#999;
+		text-decoration:line-through;
+		font-size:9px;
+		margin-left:9px;
+	}
+	.con-1 .nub{
+		color:#666;
+		height:12px;
+		line-height:12px;
+	}
+	.con-1 .last{
+		margin-right:0;
+	}
+	/*end 内容部分1*/
+	/*内容部分2*/
+	.con-2 .rctj{
+		display:block;
+		height:23px;
+		width:156px;
+		background:url(../img/wel_ico2.png) no-repeat 0 -240px;
+	}
+	.con-2 .more{
+		font-size:14px;
+		color:#999;
+	}
+	/*end 内容部分2*/
+	/*分割条*/
+	.fenge{
+		width:1200px;
+		margin:0 auto 20px;
+	}
+	/*end 分割条*/
+	/*内容部分3*/
+	.con-3{
+		width:1200px;
+		margin:0 auto 20px;
+	}
+	.con-3 .tit{
+		border-bottom:1px solid #e6e6e6;
+		height:32px;
+	}
+	.con-3 .tit .yf{
+		width:77px;
+		height:22px;
+		background:url(../img/wel_ico2.png) no-repeat 0 -44px;
+	}
+	.con-3 .tit span{
+		font-size:14px;
+		color:#999;
+		padding-left:9px;
+		border-left:1px dashed #999;
+		height:16px;
+		line-height:16px;
+		margin-left:11px;
+	}
+	.con-3 .tit b{
+		font-weight:bold;
+		color:#666;
+	}
+	.con-3-l{
+		width:940px;
+		height:611px;
+		border-right:1px solid #e6e6e6;
+	}
+	.con-3-l .con-3-t{
+		margin-top:20px;
+	}
+	.con-3-l .con-3-t li{
+		margin-right:5px;
+		margin-bottom:5px;
+	}
+	.con-3-l .con-3-t img{
+		display:block;
+	}
+	.con-3-l .con-3-t a{
+		position:relative;
+		display:block;
+	}
+	.con-3-l .con-3-t .opa{
+		position:absolute;
+		left:0;
+		bottom:0;
+	}
+	.con-3-l .con-3-t li p{
+		position:absolute;
+		left:0;
+		bottom:0;
+		width:180px;
+		height:34px;
+		line-height:34px;
+		font-size:14px;
+		color:#fff;
+		text-align:center;
+	}
+	.con-3-warp{
+		border-bottom:1px solid #e6e6e6;
+	}
+	.con-3-l .con-3-b li{
+		width:312px;
+		height:44px;
+		margin-top:15px;
+		border-left:1px dashed #999;
+	}
+	.con-3-l .con-3-b .one{
+		border:0;
+	}
+	.con-3-l .con-3-b li h4{
+		width:31px;
+		height:44px;
+		font-size:14px;
+		line-height:44px;
+		color:#ff6699;
+		padding:0 19px 0 12px;
+	}
+	.con-3-l .con-3-b li p{
+		width:250px;
+		height:44px;
+		line-height:22px;
+	}
+	.con-3-l .con-3-b li a{
+		color:#666;
+		margin-right:9px;
+	}
+	.con-3-r{
+		width:239px;
+		padding-left:20px;
+		padding-top:20px;
+	}
+	.con-3-r .yfd h4{
+		font-size:16px;
+		color:#666;
+		font-weight:bold;
+	}
+	.con-3-r .yfd a{
+		font-size:13px;
+		color:#999;
+		margin-top:3px;
+	}
+	.con-3-r li{
+		width:239px;
+		height:62px;
+		border-bottom:1px dashed #ccc;
+	}
+	.con-3-r li img{
+		margin:14px 12px 0 0;
+	}
+	.con-3-r li p{
+		color:#999;
+		height:12px;
+		line-height:12px;
+	}
+	.con-3-r li .one{
+		color:#666;
+		margin:14px 0 10px 0;
+	}
+	.con-3-r li.last{
+		border:0;
+	}
+	.con-3 .tit .xz{
+		width:77px;
+		height:23px;
+		background:url(../img/wel_ico2.png) no-repeat 0 -82px;
+	}
+	/*end 内容部分3*/
+	/*内容部分7*/
+	.con-7{
+		width:1200px;
+		margin:0 auto 20px;
+	}
+	.con-7 .tit{
+		margin-bottom:15px;
+	}
+	.con-7 .tit .zz{
+		width:115px;
+		height:21px;
+		background:url(../img/wel_ico2.png) no-repeat 0 -201px;
+	}
+	.con-7 .tit p a{
+		padding:0 14px 0 17px;
+		border-right:1px dashed #ccc;
+		font-size:14px;
+		color:#999;
+	}
+	.con-7 .tit .last{
+		padding-right:0;
+		border:0;
+	}
+	.con-7 .li-warp{
+		width:213px;
+		height:283px;
+		border:1px solid #ddd;
+		padding-left:13px;
+		margin-right:15px;
+	}
+	.con-7 .li-warp.last{
+		margin-right:0;
+	}
+	.con-7 .li-warp h4{
+		font-size:14px;
+		height:37px;
+		line-height:37px;
+		color:#666;
+		font-weight:bold;
+	}
+	.con-7 .li-warp li{
+		width:64px;
+		height:64px;
+		margin:0 4px 4px 0;
+	}
+	.con-7 .li-warp p{
+		height:38px;
+	}
+	.con-7 .li-warp p span{
+		line-height:38px;
+		height:38px;
+		color:#999;
+	}
+	.con-7 .li-warp p a{
+		width:64px;
+		height:20px;
+		line-height:20px;
+		text-align:center;
+		color:#fff;
+		background:#ff6699;
+		margin:9px 13px 0 0;
+	}
+	/*end 内容部分7*/
+	/*底部导航1*/
+	.bottom-nav{
+		height:311px;
+		background:#f5f5f5;
+		border-top:1px solid #ddd;
+	}
+	.bottom-nav-t{
+		width:1200px;
+		margin:0 auto;
+		height:210px;
+		border-bottom:1px solid #ddd;
+	}
+	.bottom-nav-t .b-nav-1{
+		width:241px;
+	}
+	.bottom-nav-t .b-nav-1 i{
+		width:35px;
+		height:35px;
+		background:url(../img/mls_global140607.png) no-repeat 0 -114px;
+		margin:34px 13px 0 0;
+	}
+	.bottom-nav-t .b-nav-1 .list1{
+		height:15px;
+		line-height:15px;
+		font-size:15px;
+		font-weight:bold;
+		color:#666;
+		margin:33px 0 10px 0;
+	}
+	.bottom-nav-t .b-nav-1 .list2{
+		height:14px;
+		line-height:14px;
+		font-size:14px;
+		color:#666;
+		margin-bottom:14px;
+	}
+	.bottom-nav-t .b-nav-1 .list3{
+		height:12px;
+		line-height:12px;
+		color:#666;
+	}
+	.bottom-nav-t li{
+		width:123px;
+		height:12px;
+		line-height:12px;
+		color:#666;
+		margin-bottom:14px;
+	}
+	.bottom-nav-t .first{
+		height:16px;
+		line-height:16px;
+		font-size:16px;
+		color:#666;
+		font-weight:bold;
+		margin:30px 0 20px;
+	}
+	.bottom-nav-t li .list1,.bottom-nav-t li .list2,.bottom-nav-t li .list3{
+		width:16px;
+		height:16px;
+		background:url(../img/mls_global140607.png) no-repeat 0 -21px;
+		vertical-align: middle;
+		margin:0 3px 2px 0;
+		}
+	.bottom-nav-t li .list2{
+		background-position:-73px -21px;
+	}
+	.bottom-nav-t li .list3{
+		background-position:-49px -21px;
+	}
+	.bottom-nav-t .last1 li,.bottom-nav-t .last2 li{
+		width:135px;
+		height:12px;
+		line-height:12px;
+		color:#666;
+		margin-bottom:20px;
+	}
+	.bottom-nav-t .last2 .down{
+		width:131px;
+		height:98px;
+		background:url(../img/mls_global140607.png) no-repeat 0 -401px;
+	}
+	/*end 底部导航1*/
+	/*底部友情链接*/
+	.bottom-inter{
+		width:1190px;
+		margin:0 auto 15px;
+		padding-left:10px;
+		height:30px;
+		line-height:30px;
+		color:#666;
+		border-bottom:1px solid #ddd;
+	}
+	.bottom-inter a{
+		color:#666;
+		margin-right:11px;
+		}
+	/*end 底部友情链接*/
+	/*底部版权声明*/
+	.footer{
+		width:1200px;
+		margin:0 auto;
+	}
+	.footer p{
+		color:#666;
+		height:12px;
+		line-height:12px;
+		margin-bottom:10px;
+	}
+	/*end 底部版权声明*/

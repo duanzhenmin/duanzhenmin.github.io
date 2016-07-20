@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>段振民</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon" />
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{overflow: hidden;}
+	#ul1{
+		position:relative;
+		width:100%;
+	}
+	#ul1 li{
+		position:absolute;
+		top:0;
+		left:0;
+		list-style:none;
+	}
+	li img{
+		width:100%;
+	}
+	li span{
+		position:absolute;
+		left:0;
+		top:0;
+		width: 30px;
+		height: 370px;
+		text-align: center;
+		padding-top:230px;
+		color:#fff;
+		font-weight: 500;
+		cursor:pointer;
+	}
+	.bg1{background: #009933;}
+	.bg2{background: #00CCFF;}
+	.bg3{background: #33CC99;}
+	.bg4{background: #6600FF;}
+	.bg5{background: #9933CC;}
+</style>
+<script src="js/method.js"></script>
+<script>
+	window.onload = function(){
+		var oUl=document.getElementById("ul1");
+		var aLi=oUl.children;
+		var w=30;
+		function resize(){
+			var W=document.documentElement.clientWidth;
+			W=W-w*(aLi.length-1);
+			console.log(W)
+			for (var i = 0; i < aLi.length; i++) {
+				aLi[i].style.width=W+'px';
+			}
+		}
+		resize();
+		window.onresize=resize;
+		for (var i = 1; i < aLi.length; i++) {
+			aLi[i].style.left=aLi[0].offsetWidth+(i-1)*w+'px';
+		}
+		for (var i = 0; i < aLi.length; i++) {
+			aLi[i].index=i;
+			aLi[i].onclick=function(){
+				for (var i = 1; i < aLi.length; i++) {
+					if (i<=this.index) {
+						move(aLi[i],{left:i*w});
+					} else{
+						move(aLi[i],{left:aLi[0].offsetWidth+(i-1)*w})
+					}
+				}
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li>
+			<a href="html/jd/jd.html" target="_blank">
+				<img src="img/jd.jpg" alt="京东" />
+			</a>
+			<span class="bg1">京东</span>
+		</li>
+		<li>
+			<a href="html/lhhx/lhhx.html" target="_blank">
+				<img src="img/linghunhuixiang.JPG" alt="灵魂回响" />
+			</a>
+			<span class="bg2">灵魂回响</span>
+		</li>
+		<li>
+			<a href="html/xaiomi/xiaomi.html" target="_blank">
+				<img src="img/xiaomi.JPG" alt="小米网" />
+			</a>
+			<span class="bg3">小米网</span>
+		</li>
+		<li>
+			<a href="html/baideli/baideli.html" target="_blank">
+				<img src="img/baideli.jpg" alt="百得利" />
+			</a>
+			<span class="bg4">百得利</span>
+		</li>
+		<li>
+			<a href="html/meilishuo/melishuo.html" target="_blank">
+				<img src="img/meilishuo.JPG" alt="美丽说" />
+			</a>
+			<span class="bg5">美丽说</span>
+		</li>
+	</ul>
+</body>
+</html>

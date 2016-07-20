@@ -1,0 +1,743 @@
+/*头部导航部分1*/
+	.top-wrap{
+		height:36px;
+		background:#fafafa;
+		border-bottom:1px solid #dfdfdf;
+		margin-bottom:25px;
+	}
+	.top{
+		margin:0 auto;
+		width:931px;
+		padding:12px 38px;
+		height:12px;
+		line-height:12px;
+	}
+	.top a{
+		font-size:11px;
+		color:#8c8c8c;
+		padding:0 16px 0 11px;
+		border-right:1px solid #dfdfdf;
+	}
+	.top a:hover{
+		color:#ff4a00;
+	}
+	.top .front{
+		padding-left:0;
+	}
+	.top .last{
+		border-right:none;
+	}
+	.top .last1{
+		padding-right:0;
+	}
+	/*头部导航部分2*/
+	/*上方搜索部分1*/
+	.search{
+		margin:0 auto;
+		width:931px;
+		padding:0 38px;
+		margin-bottom:15px;
+	}
+	.search .fr p{
+		text-align:right;
+		margin-bottom:14px;
+	}
+	.search .fr a:hover{
+		color:#ff4a00;
+	}
+	.search .fr p img{
+		margin-right:10px;
+	}
+	.search .fr span{
+		overflow:hidden;
+		}
+	.search .fr input{
+		height:38px;
+		width:368px;
+		border:1px solid #dfdfdf;
+		font-size:14px;
+		padding-left:15px;
+		color:#a9a9a9;
+		background:url(../img/xiaomi.png) no-repeat 193px 9px;
+	}
+	.search .fr .car{
+		display:inline-block;
+		height:40px;
+		width:126px;
+		background:#ffdb3d;
+		line-height:40px;
+		text-align:center;
+		color:#333;
+		margin-left:10px;
+	}
+	.search .fr .car img{
+		margin-top:13px;
+		margin-right:2px;
+	}
+	.search .fr .tj{
+		display:inline-block;
+		height:38px;
+		width:38px;
+		line-height:38px;
+		text-align:center;
+		border:1px solid #dfdfdf;
+	}
+	.search .fr .tj img{
+		margin-top:12px;
+	}
+	/*上方搜索部分2*/
+	/*商品分类部分左1*/
+	.nav{
+		margin:0 auto;
+		width:931px;
+		padding:0 38px;
+		margin-bottom:26px;
+	}
+	.nav-l li{
+		width:228px;
+		height:73px;
+		padding-left:20px;
+		border-left:1px solid #dfdfdf;
+		border-bottom:1px solid #dfdfdf;
+		overflow:hidden;
+	}
+	.nav-l .list{
+		color:#fff;
+		font-size:17px;
+		background:#ff4a00;
+		height:50px;
+		line-height:50px;
+		border-bottom:0;
+	}
+	.nav-l li p{
+		height:32px;
+		color:#ff4a00;
+		line-height:32px;
+		margin-top:9px;
+	}
+	.nav-l li p a{
+		color:#ff4a00;
+	}
+	.nav-l li a{
+		color:#6d6d6d;
+		margin-right:6px;
+	}
+	.nav-l li a:hover{
+		color:#ff4a00;
+	}
+	/*商品分类部分左2*/
+	/*商品分类部分右1*/
+	.nav-r .nav-r-t{
+		width:682px;
+		height:50px;
+		background:#404144;
+		line-height:50px;
+	}
+	.nav-r .nav-r-t a{
+		color:#fff;
+		font-size:14px;
+		margin:0 11px;
+	}
+	.nav-r .nav-r-t a:hover{
+		color:#ff4a00;
+	}
+	.nav-r .nav-r-b li{
+		width:226px;
+		height:170px;
+		border:1px solid #dfdfdf;
+		border-right:0;
+	}
+	.nav-r .nav-r-b .last{
+		border:1px solid #dfdfdf;
+	}
+	.nav-r .nav-r-b p{
+		height:16px;
+		width:227;
+		line-height:16px;
+		margin-top:22px;
+		text-align:center;
+		font-size:16px;
+	}
+	.nav-r .nav-r-b .one{
+		height:11px;
+		line-height:11px;
+		margin-top:8px;
+		color:#8a8a8a;
+		font-size:11px;
+	}
+	.nav-r .nav-r-b img{
+		margin:17px 0 0 56px;
+	}
+	/*商品分类部分右2*/
+	/*上方商品展示部分1*/
+	.con-1{
+		margin:0 auto;
+		width:931px;
+		padding:0 38px;
+		margin-bottom:30px;
+	}
+	.con-1 .tit h2{
+		font-size:18px;
+		color:#333;
+		height:18px;
+		line-height:18px;
+		margin-bottom:17px;
+		}
+	.con-1 .tit span{
+		color:#6d6d6d;
+		height:12px;
+		line-height:12px;
+		margin-left:11px;
+		}
+	.con-1 .main li{
+		width:309px;
+		height:278px;
+		border:1px solid #dfdfdf;
+		border-right:0;
+		padding-top:30px;
+		text-align:center; 
+		}
+	.con-1 .main .main-3{
+		border-right:1px solid #dfdfdf;
+		}
+	.con-1 .main p{
+		font-size:16px;
+		color:#000;
+		margin-top:33px;
+		font-weight:bold;
+		height:16px;
+		line-height:16px;
+		margin-bottom:7px;
+		}
+	.con-1 .main .one{
+		font-size:11px;
+		color:#8c8c8c;
+		height:11px;
+		line-height:11px;
+		margin:0;
+		}
+	/*上方商品展示部分2*/
+	/*商品展示2部分左侧1*/
+	.con-2{
+		margin:0 auto;
+		width:931px;
+		padding:0 38px;
+		margin-bottom:30px;
+		}
+	.con-2 .tit,.con-6 .tit,.con-7 .tit{
+		margin-bottom:17px;
+		}
+	.con-2 .tit h2,.con-6 .tit h2,.con-7 .tit h2{
+		font-size:17px;
+		color:#33335f;
+		heigt:17px;
+		line-height:17px;
+		}
+	.con-2 .tit a,.con-6 .tit a,.con-7 .tit a{
+		color:#333;
+		padding-right:20px;
+		background:url(../img/xiaomi_032.png) no-repeat 33px;
+	}
+	.con-2-wrap{
+		border:1px solid #dfdfdf;
+		}
+	.con-2-wrap .con-2-l .img1{
+		border-right:1px solid #dfdfdf;
+		}
+	.con-2-l .fl{
+		width:279px;
+		height:275px;
+		border-top:1px solid #dfdfdf;
+		border-right:1px solid #dfdfdf;
+		padding:34px 0 0 30px;
+		}
+	.con-2-l p{
+		margin-bottom:9px;
+	}
+	.con-2-l a{
+		color:#000;
+		height:12px;
+		line-height:12px;
+		}
+	.con-2-l span{
+		text-decoration:line-through;
+		color:#8c8c8c;
+	}
+	.con-2-l .fl img{
+		margin:24px 0 0 49px;
+	}
+	.con-2-l .fr li{
+		width:279px;
+		height:120px;
+		padding:34px 0 0 30px;
+		border-top:1px solid #dfdfdf;
+		border-right:1px solid #dfdfdf;
+		}
+	.con-2-l .fr p{
+		width:126px;
+		}
+	.con-2-l .fr img{
+		margin:-59px 0 0 172px;
+	}
+	.con-2-c .fl{
+		background:url(../img/xiaomiby.jpg) no-repeat 213px 0px;}
+	.con-2-b li{
+		width:279px;
+		height:275px;
+		padding:34px 0 0 30px;
+		border-top:1px solid #dfdfdf;
+		border-right:1px solid #dfdfdf;
+		}
+	.con-2-b .fl img{
+		margin:15px 0 0 33px;
+	}
+	.con-2-b .fl .one{
+		margin:15px 0 0 78px;
+	}
+	/*商品展示2部分左侧2*/
+	/*商品展示2部分右侧1*/
+	.con-2-r .clearfix{
+		width:279px;
+		height:91px;
+		padding:35px 0 0 30px;
+		border-bottom:1px solid #dfdfdf;
+		background:#fafafa;
+		}
+	.con-2-r li p{
+		width:160px;
+		font-size:17px;
+		height:17px;
+		line-height:17px;
+		margin-bottom:4px;
+		}
+	.con-2-r .list1 a{
+		font-size:17px;
+		color:#333;
+		}
+	.con-2-r .first{
+		background:url(../img/xmtj.jpg) #fafafa no-repeat 30px 0;
+		}
+	.con-2-r li img{
+		margin:-22px 18px 0 0;
+		}
+	.con-2-r .list2 a{
+		color:#f32f39;
+		}
+	.con-2-r .list3 a{
+		color:#6d6d6d;
+		}
+	.con-2-r .list2 span{
+		color:#8c8c8c;
+		text-decoration:line-through;
+		}
+	.con-2-r .list2,.con-2-r .list3{
+		height:20px;
+		line-height:20px;
+		margin-bottom:0;
+		}
+	.con-2-r .cz{
+		width:278px;
+		height:249px;
+		border-bottom:1px solid #dfdfdf;
+		padding:30px 0 0 30px;
+		background:#fafafa;
+		}
+	.con-2-r .cz h2{
+		font-size:17px;
+		color:#333;
+		height:17px;
+		line-hight:17px;
+		margin-bottom:5px;
+		}
+	.con-2-r .cz input{
+		width:231px;
+		height:38px;
+		padding-left:15px;
+		border:1px solid #dfdfdf;
+		margin-top:10px;
+		font-size:14px;
+		color:#a9a9a9;
+		}
+	.con-2-r .cz .two{
+		font-size:12px;
+		color:#6d6d6d;
+		background:url(../img/xiaomixia.jpg) no-repeat #fff 226px 17px;
+		}
+	.con-2-r .cz p{
+		height:57px;
+		color:#6d6d6d;
+		line-height:57px;
+		}
+	.con-2-r .cz span{
+		font-size:13px;
+		}
+	.con-2-r .cz div{
+		width:248px;
+		height:40px;
+		background:#dcdee4;
+		text-align:center;
+		}
+	.con-2-r .cz a{
+		font-size:14px;
+		color:#fdfdfd;
+		line-height:40px;
+		}
+	.con-2-r .cz .xx{
+		width:248px;
+		height:45px;
+		list-style:disc;
+		border-top:1px solid #dfdfdf;
+		background:url(../img/xiaomijt.jpg) no-repeat 238px 18px;
+		}
+	.con-2-r .cz .xx a{
+		color:#333;
+		font-size:12px;
+		line-height:45px;
+	}
+	.con-2-r .cz .one{
+		margin-top:10px;
+		border-top:none;
+		}
+	.con-2-r .cz ul{
+		overflow:hidden;
+		}
+	.con-2-r .czx{
+		height:238px;
+	}
+	/*商品展示2部分右侧2*/
+	/*商品展示3部分1*/
+	/*商品展示3部分左侧1*/
+	.con-3{
+		margin:0 auto;
+		width:931px;
+		padding:0 38px;
+	}
+	.con-3 h2.tit{
+		font-size:17px;
+		height:17px;
+		line-height:17px;
+		color:#333;
+		margin-bottom:17px;
+	}
+	.con-3-wrap{
+		border:1px solid #dfdfdf;
+		margin-bottom:31px;
+	}
+	.con-3-l{
+		width:620px;
+	}
+	.con-3-l .xmtx{
+		border-right:1px solid #dfdfdf;
+		border-bottom:1px solid #dfdfdf;
+	}
+	.con-3-l li{
+		width:279px;
+		height:275px;
+		padding:34px 0 0 30px;
+		border-right:1px solid #dfdfdf;
+		}
+	.con-3-l p{
+		margin-bottom:9px;
+	}
+	.con-3-l a{
+		color:#000;
+		height:12px;
+		line-height:12px;
+		}
+	.con-3-l li img{
+		margin:15px 0 0 50px;
+	}
+	/*商品展示3部分左侧2*/
+	/*商品展示3部分右侧1*/
+	.con-3-r li{
+		width:277px;
+		height:68px;
+		border-bottom:1px solid #dfdfdf;
+		padding:34px 0 0 31px;
+	}
+	.con-3-r .tit{
+		width:277px;
+		height:65px;
+		padding:38px 0 0 31px;
+	}
+
+	.con-3-r .tit span{
+		font-size:24px;
+	}
+	.con-3-r .tit i{
+		font-size:24px;
+	}
+	.con-3-r li i{
+		font-size:29px;
+		color:#ff4a00;
+		width:11px;
+		height:29px;
+		line-height:29px;
+	}
+	.con-3-r .last i{
+		color:#6d6d6d;
+	}
+	.con-3-r li p{
+		width:118px;
+		height:13px;
+		line-height:13px;
+		margin:0 33px 9px 20px;
+	}
+	.con-3-r li a{
+		color:#333;
+	}
+	.con-3-r li img{
+		margin-top:-13px;
+	}
+	.con-3-r .list1{
+		border-bottom:0;
+	}
+	/*商品展示3部分右侧2*/
+	/*商品展示3部分2*/
+	/*商品展示4部分1*/
+	.con-4,.con-5,.con-6,.con-7{
+		margin:0 auto;
+		width:931px;
+		padding:0 38px;
+		margin-bottom:31px;
+	}
+	.con-4 h2,.con-5 h2{
+		font-size:17px;
+		height:17px;
+		line-height:17px;
+		color:#333;
+		margin-bottom:17px;
+	}
+	.con-4 .main li,.con-5 .main li,.con-6 .main li{
+		width:279px;
+		height:376px;
+		border:1px solid #dfdfdf;
+		border-right:0;
+		padding:34px 0 0 30px; 
+		}
+	.con-4 .main .main-3,.con-5 .main .main-3,.con-6 .main .main-3,.con-7 .main .main-3{
+		border-right:1px solid #dfdfdf;
+		}
+	.con-4 .main p,.con-7 .main p{
+		color:#333;
+		height:12px;
+		line-height:12px;
+		margin-bottom:9px;
+		}
+	.con-4 .main span{
+		padding-left:8px;
+		border-left:1px solid #dfdfdf;
+		color:#9d9daf;
+		}
+	.con-4 .main .one{
+		margin:7px 0 0 0;
+		}
+	.con-4 .main .last{
+		margin:59px 0 0 33px;
+		}
+	.con-4 .main .two,.con-6 .main .two{
+		width:261px;
+		height:46px;
+		line-height:18px;
+		background:#f3f3f3;
+		padding:10px 0 0 15px;
+		margin:20px 0 10px -15px;
+		}
+	/*商品展示4部分2*/
+	/*商品展示5部分1*/
+	.con-5 .main li{
+		height:275px;
+		overflow:hidden;
+		}
+	.con-5 .main a{
+		position:relative;
+		display:block;
+		width:279px;
+		height:275px;
+		}
+	.con-5 .main .inf{
+		position:absolute;
+		left:184px;
+		top:-34px;
+		width:70px;
+		height:20px;
+		background:#f32f39;
+		color:#fff;
+		text-align:center;
+		line-height:20px;
+		}
+	.con-5 .main p{
+		color:#333;
+		height:12px;
+		line-height:12px;
+		margin-bottom:6px;
+		}
+	.con-5 .main span{
+		text-decoration:line-through;
+		color:#9d9daf;
+		}
+	.con-5 .main img{
+		margin:34px 0 0 27px;
+		}
+	/*商品展示5部分2*/
+	/*商品展示6部分1*/
+	.con-6 .main p{
+		color:#333;
+		height:11px;
+		line-height:11px;
+		margin-bottom:8px;
+		}
+	.con-6 .main .one{
+		color:#333;
+		height:12px;
+		line-height:12px;
+		}
+	.con-6 .main img{
+		margin:45px 0 12px 26px;
+		}
+	.con-6 .main .two{
+		margin-top:0;
+	}
+	/*商品展示6部分2*/
+	/*商品展示7部分1*/
+	.con-7 .main li{
+		width:279px;
+		height:301px;
+		border:1px solid #dfdfdf;
+		border-right:0;
+		padding:34px 0 0 30px; 
+		}
+	.con-7 .main img{
+		margin-top:26px;
+		}
+	.con-7{
+		margin-bottom:65px;
+		}
+	/*商品展示7部分2*/
+	/*下方导航部分*/
+	.bm-nav{
+		height:534px;
+		background:#fafafa;
+		padding:0 39px;
+	}
+	.bm-nav-warp{
+		width:930px;
+		padding:0 39px;
+		margin:0 auto;
+	}
+	/*下方导航部分1*/
+	.bm-nav-t li{
+		width:186px;
+		height:154px;
+		border-bottom:1px solid #dfdfdf;
+		margin-bottom:40px;
+	}
+	.bm-nav-t img{
+		margin:48px 0 0 70px;	
+	}
+	.bm-nav-t p{
+		height:15px;
+		line-height:15px;
+		font-size:15px;
+		color:#000;
+		text-align:center;
+		margin-top:18px;
+	}
+	/*end下方导航部分1*/
+	/*下方导航部分2*/
+	.bm-nav-c{
+		border-bottom:1px solid #dfdfdf;
+		margin-bottom:35px;
+	}
+	.bm-nav-c ul{
+		width:128px;
+		height:118px;
+		padding-left:20px;
+		border-right:1px solid #dfdfdf;
+		margin-bottom:40px;
+	}
+	.bm-nav-c li{
+		height:27px;
+	}
+	.bm-nav-c .first{
+		height:29px;
+		padding-top:5px;
+	}
+	.bm-nav-c .first a{
+		color:#333;
+		font-size:17px;
+	}
+	.bm-nav-c li a{
+		color:#6d6d6d;
+	}
+	.bm-nav-c .list{
+		line-height:27px;
+	}
+	.bm-nav-c .last{
+		width:185px;
+		height:118px;
+		margin-bottom:40px;
+	}
+	.bm-nav-c .last h2{
+		font-size:19px;
+		font-weight:bold;
+		height:25px;
+		line-height:25px;
+		color:#000;
+		text-align:center;
+		margin-bottom:10px;
+	}
+	.bm-nav-c .last p{
+		font-size:12px;
+		height:12px;
+		line-height:12px;
+		color:#6d6d6d;
+		text-align:center;
+		margin-bottom:9px;
+	}
+	.bm-nav-c .last .kf{
+		width:120px;
+		height:30px;
+		line-height:30px;
+		font-size:11px;
+		color:#fff;
+		background:#ff4a00;
+		margin-left:35px;
+		margin-top:19px;
+	}
+	/*end下方导航部分2*/
+	/*下方导航部分3*/
+	.bm-nav-b .fl{
+		width:695px;
+		font-family:"黑体";
+	}
+	.bm-nav-b .fl a{
+		padding-right:4px;
+		color:#333;
+		border-right:1px solid #333;
+		font-family:"黑体";
+	}
+	.bm-nav-b .fl .list1{
+		padding-left:0;
+	}
+	.bm-nav-b .fl .list11{
+		border-right:0;
+		padding-right:0;
+	}
+	.bm-nav-b .fl p{
+		margin-bottom:8px;
+		font-size:12px;
+	}
+	.bm-nav-b .fr{
+		width:188px;
+		height:38px;
+		padding-left:10px;
+		border:1px solid #dfdfdf;
+		color:#8c8c8c;
+		background:url(../img/xm_01.png) #fff no-repeat 180px 16px;
+	}
+	.bm-nav-b .clearfix{
+		margin-bottom:17px;
+	}
+	/*end下方导航部分3*/
+	/*end下方导航部分*/
