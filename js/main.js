@@ -30,6 +30,9 @@ window.onload=function(){
 		H=document.documentElement.clientHeight;
 		W=document.documentElement.clientWidth;
 		oHomePage.style.height=H+'px';
+		oWork.style.height=H+'px';
+		oAbout.style.height=H+'px';
+		oContact.style.height=H+'px';
 		//轮播图图片高度
 		for(var i=0;i<aTabLi.length;i++){
 			aTabLi[i].style.height=H+'px';
