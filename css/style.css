@@ -300,6 +300,9 @@ a{color:#666;}
 	height:150px;
 	border:10px solid #fff;
 	border-radius:50%;
+	-webkit-transition: 500ms all linear;
+	-moz-transition: 500ms all linear;
+	-ms-transition: 500ms all linear;
 	transition: 500ms all linear;
 }
 .about-me .circlet .l-c{
@@ -312,6 +315,9 @@ a{color:#666;}
 	border-right:10px solid transparent;
 	border-bottom:10px solid transparent;
 	right:0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 .about-me .circlet b{
@@ -413,9 +419,9 @@ a{color:#666;}
 	line-height: 36px;
 	color:#7a7e89;
 	text-align: center;
-	 background:-webkit-linear-gradient(left,#f00,#ff0 25%,#cd2f8f 40%,#53b9b9 55%,#00f 70%,#f00); 
+	background:-webkit-linear-gradient(left,#f00,#ff0 25%,#cd2f8f 40%,#53b9b9 55%,#00f 70%,#f00); 
 	-webkit-background-clip:text;
-	color:transparent; 
+	-webkit-text-fill-color:transparent; 
 }
 .contact-inf .text strong{
 	font-size: 20px;

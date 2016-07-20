@@ -307,11 +307,11 @@ window.onload=function(){
 				var aSpan=aWorkIntro.getElementsByTagName('span');
 				for (var i = 0; i < aSpan.length; i++) {
 					var nSpan=0;
-					setTimeout(show,50*i);
 					function show(){
 						move(aSpan[nSpan],{opacity:1});
 						nSpan++;
 					}
+					setTimeout(show,50*i);
 				}
 			})();
 		}
