@@ -24,7 +24,7 @@ h2{
 	text-shadow:3px 3px 0 #aee2d9;
 }
 .wrap{
-	width: 80%;
+	width: 1200px;
 	margin: 70px auto 0;
 	background: #efefef;
 	padding-top:20px;
@@ -385,8 +385,10 @@ h2{
 }
 .tab-3D .pic{
 	position:relative;
+	width:900px;
 	height: 400px;
 	background: url(../img/4/bg.jpg) no-repeat;
+	margin:0 auto;
 }
 .tab-3D .pic li{
 	float:left;
