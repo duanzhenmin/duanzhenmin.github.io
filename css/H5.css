@@ -31,7 +31,7 @@ h2{
 	text-shadow:3px 3px 0 #aee2d9;
 }
 .wrap{
-	width: 80%;
+	width: 1200px;
 	margin: 70px auto 0;
 	background: #efefef;
 	padding-top:20px;
@@ -166,6 +166,136 @@ h2{
 }
 .circular .box{text-align: center;}
 .circular img{width:90%;}
+/*多样式更换*/
+.vary{overflow: hidden;}
+.vary .btn{
+	text-align: center;
+}
+.vary .btn input{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	background: #008000;
+	color: #FFF;
+	cursor: pointer;
+}
+.vary .box1{
+	width:700px;
+	height: 400px;
+	background: #ccc;
+	margin:10px auto;
+	position:relative;
+}
+.vary .box1 span{
+	position:absolute;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.vary .box1 span i{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.vary .box1 span i:nth-child(1){
+	background: url('../img/0.jpg') no-repeat;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+.vary .box1 span i:nth-child(2){
+	background:url('../img/1.jpg') no-repeat;
+	transform:scale(-1,1);
+}
+.vary .box2{
+	width:700px;
+	height:400px;
+	background:url(../img/0.jpg) no-repeat;
+	margin: 10px auto;
+	position:relative;
+	transform-style:preserve-3d ;
+}
+.vary .box2 span{
+	position: absolute;
+}
+.vary .box3{
+	position:relative;
+	width: 700px;
+	height: 400px;
+	background: url('../img/0.jpg');
+	margin:10px auto;
+}
+.vary .box3>div{
+	position:absolute;
+	top:0;
+	right:0;
+	width:50%;
+	height:100%;
+}
+.vary .box3 .page{
+	transform-origin: left center;
+	transform-style: preserve-3d;
+	z-index: 1;
+}
+.vary .box3 .page>div{
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+}
+.vary .box3 .page .zheng{
+	z-index: 2;
+	background: url('../img/0.jpg') no-repeat top right;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+}
+.vary .box3 .page .fan{
+	z-index: 1;
+	background: url('../img/1.jpg') no-repeat top left;
+	transform:scale(-1,1);
+}
+.vary .box3 .page2{
+	background:url('../img/1.jpg') no-repeat top right;
+}
+.vary .box4{
+	width:700px;
+	height:400px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.vary .box5{
+	width:700px;
+	height:400px;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	position:relative;
+}
+.vary .box5 li{
+	position:absolute;
+	left:0;
+	top:0;
+	width:700px;
+	height:400px;
+}
+.vary .box5 .left{
+	transform:translateX(-350px) rotateY(-90deg);
+}
+.vary .box5 .right{
+	transform:translateX(350px) rotateY(90deg);
+}
+.vary .box5 li:nth-child(2){
+	transform: translateZ(350px);
+}
 /*时钟*/
 .clock{padding-bottom:30px;}
 .clock .box{
@@ -204,42 +334,10 @@ h2{
 	margin-top:36px;
 	transform-origin: center 214px;
 }
-/*简单的钢琴*/
-.piano{
-	margin-bottom:30px;
-	position:relative;
-}
-.piano .box>img{
-	position: absolute;
-	left:0;
-	top:0;
-	width:50px;
-	display:none;
-	z-index: 999999;
-}
-.piano .box ul{
-	width:80%;
-	height:300px;
-	border:1px solid #000;
-	display:-webkit-box;
-	margin:0 auto;
-	perspective:800px;
-}
-.piano .box li{
-	height:100%;
-	-webkit-box-flex: 1;
-	border:1px solid #ff0;
-	transition: 0.3s all ease;
-	cursor: pointer;
-}
-.piano .box li:nth-child(2n){
-	background:-webkit-linear-gradient(#ddd,#fff);
-}
-.piano .box li:nth-child(2n-1){
-	background:-webkit-linear-gradient(#bbb,#000);
-}
-.piano .box li.active{
-	transform:translateY(10px);
+/*变幻线*/
+canvas{
+	background:#000;
+	margin:0 80px 30px;
 }
 
 

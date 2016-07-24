@@ -7,7 +7,6 @@
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <link rel="stylesheet" type="text/css" href="css/H5.css"/>
 <script src="js/method.js"></script>
-<script src="js/sound.js"></script>
 <script src="js/H5.js"></script>
 </head>
 <body>
@@ -61,6 +60,49 @@
 				</div>
 			</div>
 		</div>
+		<!--多样式切换-->
+		<hr class="hr2" />
+		<div id="vary" class="vary">
+			<div class="con-wrap">
+				<h2>多样式切换</h2>
+				<p class="font">此效果重点在于布局，然后对各个元素进行相应排布、转换、变形、过渡，以及添加动画效果。</p>
+				<hr class="hr3" />
+				<div class="box">
+					<div class="btn">
+						<input type="button" value="翻转" />
+						<input type="button" value="爆炸" />
+						<input type="button" value="翻页" />
+						<input type="button" value="立方体" />
+					</div>
+					<ul class="box-wrap">
+						<li>
+							<div class="box1"></div>
+						</li>
+						<li>
+							<div class="box2"></div>
+						</li>
+						<li>
+							<div class="box3">
+								<div class="page">
+									<div class="zheng"></div>
+									<div class="fan"></div>
+								</div>
+								<div class="page2"></div>
+							</div>
+						</li>
+						<li>
+							<div class="box4">
+								<ul class="box5">
+									<li class="left"></li>
+									<li></li>
+									<li class="right"></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<!--时钟-->
 		<hr class="hr2" />
 		<div id="clock" class="clock">
@@ -75,27 +117,20 @@
 				</div>
 			</div>
 		</div>
-		<!--钢琴-->
+		<!--变幻线-->
 		<hr class="hr2" />
-		<div id="piano" class="piano">
+		<div id="change_line" class="change_line">
 			<div class="con-wrap">
-				<h2>音乐按键</h2>
-				<p class="font">简单的模拟钢琴按键发声，主要是audio标签的运用。</p>
+				<h2>Window变幻线</h2>
+				<p class="font">此效果主要运用了canvas，模拟Window系统屏保变幻线。</p>
 				<hr class="hr3" />
-				<div class="box">
-					<ul class="clearfix">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
+				<canvas width="920" height="500" id="canvas1">
+					您的浏览器版本太低，不支持此标签。
+				</canvas>
 			</div>
 		</div>
+		
+		
 		
 		
 		

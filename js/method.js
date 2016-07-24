@@ -104,6 +104,19 @@ function hoverDir(obj, ev){
     return Math.round((Math.atan2(y, x)*180/Math.PI+180)/90)%4;
 }
 
+//随机数
+function rnd(n,m){
+	return parseInt(Math.random()*(m-n))+n;
+}
+//添加css3样式
+function setStyle3(obj, name, value){
+    var w=name.charAt(0).toUpperCase()+name.substring(1);
+    obj.style['Webkit'+w]=value;
+    obj.style['Moz'+w]=value;
+    obj.style['ms'+w]=value;
+    obj.style['O'+w]=value;
+    obj.style[name]=value;
+}
 
 
 

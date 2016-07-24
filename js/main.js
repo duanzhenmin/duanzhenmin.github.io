@@ -30,9 +30,6 @@ window.onload=function(){
 		H=document.documentElement.clientHeight;
 		W=document.documentElement.clientWidth;
 		oHomePage.style.height=H+'px';
-		oWork.style.height=H+'px';
-		oAbout.style.height=H+'px';
-		oContact.style.height=H+'px';
 		//轮播图图片高度
 		for(var i=0;i<aTabLi.length;i++){
 			aTabLi[i].style.height=H+'px';
@@ -218,7 +215,7 @@ window.onload=function(){
 		clearInterval(timer);
 		timer=setInterval(function(){
 			n+=50;
-			if(n<=H+oWork.offsetHeight+oAbout.offsetHeight-30){
+			if(n<=H+oWork.offsetHeight+oAbout.offsetHeight-50){
 				document.body.scrollTop=document.documentElement.scrollTop=n;	
 			}else{
 				clearInterval(timer);
@@ -287,10 +284,10 @@ window.onload=function(){
 			aNavHidd.style.display='block';
 			if(ScrollTop<=H+oWork.offsetHeight*2/3){
 				nNavA=1;
-			}else if(ScrollTop<=H+oWork.offsetHeight+oAbout.offsetHeight*1/2){
+			}else if(ScrollTop<=H+oWork.offsetHeight){
 				nNavA=2;
 				circlet();
-			}else{
+			}else if(ScrollTop<=H+oWork.offsetHeight+oAbout.offsetHeight){
 				nNavA=3;
 				for (var i = 0; i < aContactP.length; i++) {
 					move(aContactP[i],{left:0});
