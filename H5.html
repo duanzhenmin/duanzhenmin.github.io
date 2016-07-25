@@ -103,20 +103,6 @@
 				</div>
 			</div>
 		</div>
-		<!--时钟-->
-		<hr class="hr2" />
-		<div id="clock" class="clock">
-			<div class="con-wrap">
-				<h2>时钟</h2>
-				<p class="font">一个简单的图片时钟。</p>
-				<hr class="hr3" />
-				<div class="box">
-					<i></i>
-					<i></i>
-					<i></i>
-				</div>
-			</div>
-		</div>
 		<!--变幻线-->
 		<hr class="hr2" />
 		<div id="change_line" class="change_line">
@@ -127,6 +113,40 @@
 				<canvas width="920" height="500" id="canvas1">
 					您的浏览器版本太低，不支持此标签。
 				</canvas>
+			</div>
+		</div>
+		<!--时钟-->
+		<hr class="hr2" />
+		<div id="clock" class="clock">
+			<div class="con-wrap">
+				<h2>时钟</h2>
+				<p class="font">此效果主要运用svg，制作的一个简单时钟。</p>
+				<hr class="hr3" />
+				<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="380">
+					<path d="M153 254
+							C153 154 151 154 151 154
+							C151 159 153 164 156 164
+							C164 164 171 159 171 154
+							C171 142 164 134 156 134
+							C142 134 131 142 131 154
+							C131 170 142 184 156 184
+							C175 184 191 170 191 154
+							C191 131 175 114 156 114
+							C131 114 111 131 111 154
+							C111 181 131 204 156 204
+							C186 204 211 181 211 154
+							C211 120 186 94 156 100"
+							style="fill:none;stroke:red;stroke-width:2"/>
+					<line x1="540" y1="190" x2="540" y2="110" class="hour"></line>
+					<line x1="540" y1="190" x2="540" y2="90" class="minute"></line>
+					<line x1="540" y1="190" x2="540" y2="70" class="second"></line>
+					<text x="530" y="65">12</text>
+					<text x="670" y="200">3</text>
+					<text x="535" y="330">6</text>
+					<text x="400" y="200">9</text>
+					<circle fill="none" stroke="rgb(170,85,255)" stroke-width="5" cx="540" cy="190" r="170"></circle>
+					<circle fill="blue" stroke-width="5" cx="540" cy="190" r="8"></circle>
+				</svg>
 			</div>
 		</div>
 		

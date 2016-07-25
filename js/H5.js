@@ -258,21 +258,6 @@ window.onload=function(){
 		})();
 		liShow(0);
 	})();
-	//时钟
-	(function(){
-		var aI=document.querySelectorAll('#clock .box i');
-		function clock(){
-			var oDate=new Date();
-			var H=oDate.getHours();
-			var M=oDate.getMinutes();
-			var S=oDate.getSeconds();
-			setStyle3(aI[0],'transform','rotate('+(H%12+M/60)*30+'deg)');
-			setStyle3(aI[1],'transform','rotate('+(M+S/60)*6+'deg)');
-			setStyle3(aI[2],'transform','rotate('+S*6+'deg)');
-		}
-		clock();
-		setInterval(clock,1000);
-	})();
 	//变幻线
 	(function(){
 		var oC=document.querySelector('#canvas1');
@@ -353,6 +338,46 @@ window.onload=function(){
 				oldLine.shift();
 			}
 		},30);
+	})();
+	
+	//时钟
+	(function(){
+		var oSv=document.querySelector('#clock svg');
+		var oC=oSv.getElementsByTagName('circle')[0];
+		var oH=document.querySelector('#clock .hour');
+		var oM=document.querySelector('#clock .minute');
+		var oS=document.querySelector('#clock .second');
+		var iN=60;
+		var timer;
+		for(var i=0;i<iN;i++){
+			var oLine=document.createElementNS('http://www.w3.org/2000/svg','line');
+			oLine.setAttribute('x1',540);
+			oLine.setAttribute('y1',190);
+			oLine.setAttribute('x2',540);
+			if(i%5==0){
+				oLine.setAttribute('y2',165);
+				oLine.setAttribute('stroke','rgb(255,170,85)');
+			}else{
+				oLine.setAttribute('y2',175);
+				oLine.setAttribute('stroke','rgb(85,170,255)');
+			}
+			oLine.setAttribute('transform','translate('+Math.cos(d2a(i*6))*170+' '+(Math.sin(d2a(i*6))*170)+') rotate('+(6*i-90)+',540,190)');
+			oLine.setAttribute('class','line');
+			oSv.insertBefore(oLine,oC);
+		}
+		
+		function click(){
+			var oDate=new Date();
+			var oh=oDate.getHours();
+			var om=oDate.getMinutes();
+			var os=oDate.getSeconds();
+			oH.setAttribute('transform','rotate('+((oh+om/60)%12*30)+',540,190)');
+			oM.setAttribute('transform','rotate('+((om+os/60)*6)+',540,190)');
+			oS.setAttribute('transform','rotate('+(os*6)+',540,190)');
+		}
+		click();
+		clearInterval(timer);
+		timer=setInterval(click,1000);
 	})();
 	
 	

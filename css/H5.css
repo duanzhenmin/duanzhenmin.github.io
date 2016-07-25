@@ -205,6 +205,7 @@ h2{
 .vary .box1 span i:nth-child(1){
 	background: url('../img/0.jpg') no-repeat;
 	z-index: 1;
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
@@ -253,6 +254,7 @@ h2{
 .vary .box3 .page .zheng{
 	z-index: 2;
 	background: url('../img/0.jpg') no-repeat top right;
+	backface-visibility: hidden;
 	-webkit-backface-visibility:hidden;
 	-moz-backface-visibility:hidden;
 	-ms-backface-visibility:hidden;
@@ -274,10 +276,10 @@ h2{
 .vary .box5{
 	width:700px;
 	height:400px;
+	transform-style:preserve-3d;
 	-webkit-transform-style:preserve-3d;
 	-moz-transform-style:preserve-3d;
 	-ms-transform-style:preserve-3d;
-	transform-style:preserve-3d;
 	position:relative;
 }
 .vary .box5 li{
@@ -296,49 +298,31 @@ h2{
 .vary .box5 li:nth-child(2){
 	transform: translateZ(350px);
 }
-/*时钟*/
-.clock{padding-bottom:30px;}
-.clock .box{
-	position:relative;
-	width:500px;
-	height: 500px;
-	background: url(../img/8/biaopan.png) no-repeat;
-	margin:40px auto 0;
-}
-.clock .box i{
-	position:absolute;
-	left:50%;
-	top:0;
-}
-.clock .box i:nth-child(1){
-	width: 71px;
-	height: 184px;
-	background: url(../img/8/shizhen.png) no-repeat;
-	margin-left: -35px;
-	margin-top:86px;
-	transform-origin: center 164px;
-}
-.clock .box i:nth-child(2){
-	width: 35px;
-	height: 213px;
-	background: url(../img/8/fenzhen.png) no-repeat;
-	margin-left: -17px;
-	margin-top:50px;
-	transform-origin: center 200px;
-}
-.clock .box i:nth-child(3){
-	width: 38px;
-	height: 269px;
-	background: url(../img/8/miaozhen.png) no-repeat;
-	margin-left: -19px;
-	margin-top:36px;
-	transform-origin: center 214px;
-}
 /*变幻线*/
 canvas{
 	background:#000;
 	margin:0 80px 30px;
 }
+
+/*svg钟表*/
+.clock .second,.clock .minute,.clock .hour{
+	stroke:rgb(85,170,255);
+	stroke-width:5;
+	stroke-linecap:round;
+}
+.clock .second{stroke: rgba(255,0,0,0.8);}
+.clock .minute{stroke: rgba(0,255,0,0.8);}
+.clock .hour{stroke: rgba(0,0,255,0.8);}
+.clock .line{
+	stroke-width:5;
+	stroke-linecap:round;
+}
+.clock text{
+	stroke: #22c3aa;
+	stroke-width:3;
+	font-size:20px;
+}
+
 
 
 

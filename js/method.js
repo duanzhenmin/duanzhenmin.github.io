@@ -3,7 +3,10 @@
 function getStyle(obj,name){
 	return (obj.cuurentStyle || getComputedStyle(obj,false))[name];
 }
-
+//角度转弧度
+function d2a(n){
+	return n*Math.PI/180;
+}
 //事件绑定
 function addEvent(obj,sEv,fn){
 	if(obj.addEventListener){
