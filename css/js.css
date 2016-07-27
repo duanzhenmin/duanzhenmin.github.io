@@ -460,8 +460,10 @@ h2{
 	padding-top: 10px;
 	border:2px dashed #aee2d9;
 	border-top:none;
+	line-height: 1.6em;
 	font-size:1.15em;
 }
+.ajax .box dd:nth-child(2n-1){background: #ddd;}
 .ajax .box i{color:#22c3aa;font-weight: 500;}
 .ajax .box b{color:rgb(249,38,114);font-weight: 500;}
 /*关于交互jsonp*/
@@ -485,6 +487,7 @@ h2{
 	text-align: left;
 	line-height:26px;
 	margin: 0 auto;
+	display:none;
 }
 .jsonp .prompt li{padding-left: 8px;}
 .jsonp .prompt .active{background:#ccc;}

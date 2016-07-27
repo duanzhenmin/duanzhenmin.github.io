@@ -450,7 +450,7 @@ window.onload = function(){
 		var oBox=getByClass(oStep,'box')[0];
 		var oBtn=getByClass(oStep,'btn')[0];
 		var C=8;
-		var R=12;
+		var R=10;
 		var iWidth=parseFloat(getStyle(oBox,'width'))/R;
 		var iHeight=parseFloat(getStyle(oBox,'height'))/C;
 		var iNow=0;
@@ -598,6 +598,7 @@ window.onload = function(){
 	
 	//关于jsonp
 	(function(){
+		var oJsonp=document.getElementById("jsonp");
 		var oSearch=document.querySelector('#jsonp input');
 		var oUl=document.querySelector('#jsonp .prompt');
 		var iNow=-1;
@@ -605,6 +606,7 @@ window.onload = function(){
 		oSearch.onkeyup=function(ev){
 			var oEvent=ev || event;
 			if(oEvent.keyCode==38 || oEvent.keyCode==40)return;
+			oUl.style.display='block';
 			jsonp({
 				url:'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
 				data:{
@@ -657,6 +659,9 @@ window.onload = function(){
 			if(oEvent.keyCode==13){
 				window.open('https://www.baidu.com/s?wd='+oSearch.value);
 			}
+		}
+		oJsonp.onclick=function(){
+			oUl.style.display='none';
 		}
 	})();
 	
