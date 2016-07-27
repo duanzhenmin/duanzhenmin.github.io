@@ -596,7 +596,69 @@ window.onload = function(){
 		}
 	})();
 	
-	
+	//关于jsonp
+	(function(){
+		var oSearch=document.querySelector('#jsonp input');
+		var oUl=document.querySelector('#jsonp .prompt');
+		var iNow=-1;
+		var oldValue;
+		oSearch.onkeyup=function(ev){
+			var oEvent=ev || event;
+			if(oEvent.keyCode==38 || oEvent.keyCode==40)return;
+			jsonp({
+				url:'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
+				data:{
+					wd:oSearch.value
+				},
+				success:function(json){
+					var arr=json.s;
+					oUl.innerHTML='';
+					for(var i=0;i<arr.length;i++){
+						var oLi=document.createElement('li');
+						oLi.innerHTML=arr[i]
+						oUl.appendChild(oLi);
+					}
+				}
+			});
+			oldValue=oSearch.value;
+		}
+		function tab(aLi){
+			for(var i=0;i<aLi.length;i++){
+				for(var j=0;j<aLi.length;j++){
+					aLi[j].className='';
+				}
+				if(iNow==-1){
+					oSearch.value=oldValue;
+				}else{
+					aLi[iNow].className='active';
+					oSearch.value=aLi[iNow].innerHTML;
+				}
+			}
+		}
+		oSearch.onkeydown=function(ev){
+			var oEvent=ev || event;
+			if(oEvent.keyCode==40){
+				var aLi=oUl.children;
+				iNow++;
+				if(iNow>=aLi.length){
+					iNow=-1;
+				}
+				tab(aLi);
+			}
+			if(oEvent.keyCode==38){
+				var aLi=oUl.children;
+				iNow--;
+				if(iNow<=-2){
+					iNow=aLi.length-1;
+				}
+				tab(aLi);
+				return false; 
+			}
+			if(oEvent.keyCode==13){
+				window.open('https://www.baidu.com/s?wd='+oSearch.value);
+			}
+		}
+	})();
 	
 	
 	

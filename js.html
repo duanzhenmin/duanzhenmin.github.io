@@ -236,6 +236,78 @@
 			</div>
 		</div>
 	</div>
+	
+	<!--关于交互-->
+	<hr class="hr2" />
+	<div id="ajax" class="ajax">
+		<div class="con-wrap">
+			<h2>关于AJAX</h2>
+			<p class="font">由于没有后台支持，所以关于ajax的案例无法在此展示。</p>
+			<hr class="hr3" />
+			<p class="font code">code</p>
+			<pre class="box">
+  <i>function</i> json2url(json){
+      <i>json</i>.t=Math.random();
+      <i>var</i> arr=[];
+      <b>for</b>(<i>var</i> name <b>in</b> <i>json</i>){
+          arr.push(name+'='+<i>json</i>[name]);
+      }
+      <b>return</b> arr.join('&amp;');
+  }
+  <i>function</i> ajax(json){
+      <i>var json</i>=<i>json</i> || {};
+      <b>if</b>(!<i>json</i>.<i>url</i>) <b>return</b>;
+      <i>json</i>.data=<i>json</i>.data || {};
+      <i>json</i>.type=<i>json</i>.type || 'get';
+      <i>json</i>.time=<i>json</i>.time || 3000;
+      <b>if</b>(window.XMLHttpRequest){
+          <i>var</i> oAjax=<b>new</b> XMLHttpRequest();
+      }else{
+          <i>var</i> oAjax=<b>new</b> ActiveXObject('Microsoft.XMLHTTP');
+      }
+      <b>switch</b>(<i>json</i>.type.toLowerCase()){
+          <b>case</b> 'get':
+              oAjax.open('GET', <i>json</i>.<i>url</i>+'?'+json2url(<i>json</i>.data), true);
+              oAjax.send();
+              <b>break</b>;
+          <b>case</b> 'post':
+              oAjax.open('POST', <i>json</i>.<i>url</i>, true);
+              oAjax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+              oAjax.send(json2url(<i>json</i>.data));
+              <b>break</b>;
+      }
+      oAjax.onreadystatechange=<i>function</i>(){
+          <b>if</b>(oAjax.readyState==4){
+              <b>if</b>((oAjax.status>=200 &amp;&amp; oAjax.status<300) || oAjax.status==304){
+                  <i>json</i>.success &amp;&amp; <i>json</i>.success(oAjax.responseText);
+              }else{
+                  <i>json</i>.<i>error</i> &amp;&amp; <i>json</i>.<i>error</i>(oAjax.status);
+              }
+              clearTimeout(timer);
+          }
+      };
+      <i>var</i> timer=setTimeout(<i>function</i>(){
+          alert('网络超时');
+          oAjax.onreadystatechange=null;
+      }, <i>json</i>.time);
+  }
+			</pre>
+		</div>
+	</div>
+	
+	<!--关于jsonp-->
+	<hr class="hr2" />
+	<div id="jsonp" class="jsonp">
+		<div class="con-wrap">
+			<h2>关于JSONP</h2>
+			<p class="font">运用jsonp模拟百度搜索信息列表。</p>
+			<hr class="hr3" />
+			<div class="box">
+				<input type="search" placeholder="请输入搜索内容" class="bd-search" />
+				<ul class="prompt"></ul>
+			</div>
+		</div>
+	</div>
 	<div id="toTop"><img src="img/05100000575CCAF767BC3D4B250267B7.gif"/></div>
 </div>
 </body>

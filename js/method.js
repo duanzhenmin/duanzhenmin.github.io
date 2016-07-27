@@ -107,6 +107,34 @@ function hoverDir(obj, ev){
     return Math.round((Math.atan2(y, x)*180/Math.PI+180)/90)%4;
 }
 
+//jsonp
+function jsonp(json){
+	var json=json || {};
+	if(!json.url)return;
+	json.callback=json.callback || 'cb';
+	json.data=json.data || {};
+	
+	var fnName=('json_'+Math.random()).replace('.','');
+	window[fnName]=function(str){
+		json.success && json.success(str);
+		oH.removeChild(oS);
+	}
+	
+	json.data[json.callback]=fnName;
+	function data2str(data){
+		var arr=[];
+		for(var name in data){
+			arr.push(name+'='+data[name]);
+		}
+		return arr.join('&');
+	}
+	
+	var oH=document.getElementsByTagName('head')[0];
+	var oS=document.createElement('script');
+	oS.src=json.url+'?'+data2str(json.data);
+	oH.appendChild(oS);
+}
+
 //随机数
 function rnd(n,m){
 	return parseInt(Math.random()*(m-n))+n;

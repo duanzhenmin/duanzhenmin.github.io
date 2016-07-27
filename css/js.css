@@ -24,7 +24,7 @@ h2{
 	text-shadow:3px 3px 0 #aee2d9;
 }
 .wrap{
-	width: 1200px;
+	width: 1000px;
 	margin: 70px auto 0;
 	background: #efefef;
 	padding-top:20px;
@@ -450,10 +450,44 @@ h2{
 .mac .box img{
 	width:50px;
 }
-
-
-
-
+/*关于交互ajax*/
+.ajax{margin-bottom: 30px;}
+.ajax .code{
+	margin-bottom: 0;
+	border: none;
+}
+.ajax .box{
+	padding-top: 10px;
+	border:2px dashed #aee2d9;
+	border-top:none;
+	font-size:1.15em;
+}
+.ajax .box i{color:#22c3aa;font-weight: 500;}
+.ajax .box b{color:rgb(249,38,114);font-weight: 500;}
+/*关于交互jsonp*/
+.jsonp{height:480px;}
+.jsonp .box{text-align: center;}
+.jsonp input{
+	width:80%;
+	height:36px;
+	padding: 3px 8px;
+	font-size: 1.2em;
+	background: none;
+	border:1px solid #3385ff;
+}
+.jsonp input:input-placeholder{color: #22c3aa;}
+.jsonp input:-ms-input-placeholder{color: #22c3aa;}
+.jsonp input::-webkit-input-placeholder{color: #22c3aa;}
+.jsonp .prompt{
+	width:80%;
+	font-size: 1.1em;
+	border:1px solid #3385ff;
+	text-align: left;
+	line-height:26px;
+	margin: 0 auto;
+}
+.jsonp .prompt li{padding-left: 8px;}
+.jsonp .prompt .active{background:#ccc;}
 
 
 
