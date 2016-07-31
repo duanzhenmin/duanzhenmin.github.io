@@ -294,8 +294,14 @@ canvas{
 	font-size:20px;
 }
 
-
-
+/*手机端页面*/
+.phone{padding-bottom: 30px;}
+.phone .box li{
+	width:33.3%;
+	text-align: center;
+	float: left;
+}
+.phone .box img{width:200px;}
 
 
 
